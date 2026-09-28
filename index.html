@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clean collection of everyday calculators.">
+  <title>Calquick — Everyday calculators</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Calquick home"><span class="brand-mark">+</span><span>Calquick</span></a>
+      <span class="header-note">Tools for everyday math</span>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Calculator</p>
+      <h1 id="page-title">Choose the tool you need.</h1>
+      <label class="select-wrap" for="calculator-select">
+        <span class="sr-only">Select a calculator</span>
+        <select id="calculator-select">
+          <option value="" selected disabled>Select a calculator</option>
+          <option value="basic">Basic Calculator</option>
+          <option value="scientific">Scientific Calculator</option>
+          <option value="percentage">Percentage Calculator</option>
+          <option value="fraction">Fraction Calculator</option>
+          <option value="ratio">Ratio Calculator</option>
+          <option value="average">Average Calculator</option>
+          <option value="age">Age Calculator</option>
+          <option value="date">Date Calculator</option>
+          <option value="time">Time Calculator</option>
+          <option value="unit">Unit Converter</option>
+          <option value="bmi">BMI Calculator</option>
+          <option value="simple-interest">Simple Interest</option>
+          <option value="compound-interest">Compound Interest</option>
+          <option value="emi">EMI / Loan</option>
+          <option value="geometry">Geometry</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="calculator-stage" class="calculator-stage" aria-live="polite"></section>
+
+    <aside class="history-panel" aria-labelledby="history-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Saved locally</p><h2 id="history-title">Calculation history</h2></div>
+        <button class="text-button" id="clear-history" type="button">Clear history</button>
+      </div>
+      <div id="history-list" class="history-list"><p class="empty-state">Your recent calculations will appear here.</p></div>
+    </aside>
+
+    <footer class="site-footer">Calquick <span>•</span> private, simple, in your browser</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
